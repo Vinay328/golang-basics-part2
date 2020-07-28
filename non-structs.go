@@ -4,8 +4,10 @@ import (
 	"fmt"
 )
 
+//TODO non struct type
 type StringUtils string //TODO different type
 
+//TODO Attach the method
 func (su StringUtils) reverse() string  {
 	var bytes = []rune(string(su))
 	i:=0
@@ -20,5 +22,6 @@ func (su StringUtils) reverse() string  {
 
 func main()  {
 	var name1 = StringUtils("vinay")
+	fmt.Println(len(name1))
 	fmt.Println(name1.reverse())
 }

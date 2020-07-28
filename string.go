@@ -13,4 +13,6 @@ func main()  {
 	var name = "vinay"
 	fmt.Println(name, "and data type is", reflect.TypeOf(name))
 
+
+
 }
