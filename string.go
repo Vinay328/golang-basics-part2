@@ -12,6 +12,8 @@ func main()  {
 
 	var name = "vinay"
 	fmt.Println(name, "and data type is", reflect.TypeOf(name))
+	fmt.Println(name[0])
+	// name[0] = 's' //TODO cannot assign to name[0]
 
 
 

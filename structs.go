@@ -24,6 +24,7 @@ type Address struct {
 	No int
 }
 
+//TODO empty struct
 type Temp struct {
 }
 

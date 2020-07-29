@@ -9,7 +9,7 @@ type StringUtils string //TODO different type
 
 //TODO Attach the method
 func (su StringUtils) reverse() string  {
-	var bytes = []rune(string(su))
+	var bytes = []rune(string(su)) // TODO you can change to uint8 as well but be careful
 	i:=0
 	j:= len(bytes)-1
 	for i <= j {

@@ -28,13 +28,9 @@ func (p Person) setFirstName(firstName string) {
 	p.firstName = firstName
 }
 
-func updatePersonObject(person Person) {
-	person.firstName = "Felix"
-}
-
-func updatePersonObjectUsingPointer(person *Person) {
-	(*person).Area.streetName = "Sector 3 , H S R layout"
-	//employee.addr.streetName = "Sector 3 , H S R layout"
+//TODO update Area field using person struct
+func (p *Person )setStreeTName()  {
+	p.streetName = "B T M"
 }
 
 func (p Area)getStreetName() string {
@@ -44,6 +40,7 @@ func (p Area)getStreetName() string {
 
 func main() {
 
+	//TODO initialization
 	var personObject = Person{
 		firstName: "vinay",
 		lastName:  "K",
@@ -53,12 +50,20 @@ func main() {
 		},
 	}
 
-	//personObject.setFirstName("dota")
+	//TODO pass by value
+	/*personObject.setFirstName("dota")
+	fmt.Println(personObject)*/
 
-/*	fmt.Println("Person type is", reflect.TypeOf(personObject))
-	fmt.Println("Area type is", reflect.TypeOf(personObject.Area))
-	fmt.Println(personObject.getFullname())*/
+	//TODO to find the data type
+   /* fmt.Println("Person type is", reflect.TypeOf(personObject))
+	fmt.Println("Area type is", reflect.TypeOf(personObject.Area))*/
 
-fmt.Println( reflect.TypeOf(personObject.getFullname))
+   //TODO additional methods
+	fmt.Println(personObject.getFullname())
+
+	personObject.getStreetName() // TODO IMP just like promoted fields you can access promoted methods as well
+
+	//TODO can achieve constructors, getters and setters
+
 
 }
